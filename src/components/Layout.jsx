@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-export default function Layout() {
+export default function Layout({ children }) {
     return (
         <div className="layout">
             <Navbar />
             <div className="content">
-                {/*Content for each page*/}
+                { children }
             </div>
             <footer>
                 <p>Copryright 2021 Web Warrioress</p>
